@@ -12,4 +12,4 @@ Zenppl
        
 ### Contact me
 
-[zenppl@163.com](mailto:email@domain.com)
+[zenppl@163.com](mailto:zenppl@163.com)
