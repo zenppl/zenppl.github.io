@@ -5,9 +5,10 @@ title: 从记录github-pages建设开始
 
 
 ###写在前边的废话：
-感觉该写点东西记录下每天的成长了，最终选择了这个，一是支持md，二是免费稳定，三是逼格貌似高？
+感觉该写点东西记录下每天的成长了，最终选择了这个，一是支持md，二是免费稳定，三是版本控制刚好学习一下git，好吧貌似逼格高点？
 
 首先贴出今天最终要的一句话
+
 ####建站两种方式
 - username.github.io的项目， 在master分支下存放网站源代码，访问username.github.io直接访问，跟我这一样
 - 建立名为 project 的项目，在 gh-pages分支下存放网站源代码，访问username.github.io/project访问
