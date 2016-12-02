@@ -74,6 +74,8 @@ public class TestCountDownLatch{
 - 创建静态内部类不需要将实例绑定在外部的实例上
 
 基于最后一条，使用非静态内部类时，启动线程可以写成
-new TestCountDownLatch().new Thread1(latch).start();
 
+```java
+new TestCountDownLatch().new Thread1(latch).start();
+```
 
