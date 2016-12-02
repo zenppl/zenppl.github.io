@@ -22,7 +22,6 @@ title: CountDownLatch
 
 #### 代码
 ```java 
-
 import java.util.concurrent.CountDownLatch;
 
 public class TestCountDownLatch{
@@ -77,5 +76,6 @@ public class TestCountDownLatch{
 
 ```java
 new TestCountDownLatch().new Thread1(latch).start();
+
 ```
 
