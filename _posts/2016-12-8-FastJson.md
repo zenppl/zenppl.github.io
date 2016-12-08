@@ -23,9 +23,9 @@ fastjson 不陌生了，在上个月的时候遇到了个小坑，今天重构�
 
 ### 字符串转json对象
 
-- get方法命名规范与eclipse自动提示相同，boolean对象需使用isX()不可用get，封装类型Boolean没有这个限制 __代码见test1部分__
-- 字符串中缺失和多余字段，可以正常转化 __代码见test2部分__
-- json对象中存在Map，且Map中使用其他对象，使用parseObject转化时会将Map中的对象转为jsonObject，需要遍历中进一步强转才能得到 __代码见test3部分__
+- get方法命名规范与eclipse自动提示相同，boolean对象需使用isX()不可用get，封装类型Boolean没有这个限制 __//test1__
+- 字符串中缺失和多余字段，可以正常转化 __//test2__
+- json对象中存在Map，且Map中使用其他对象，使用parseObject转化时会将Map中的对象转为jsonObject，需要遍历中进一步强转才能得到 __//见test3__
 
 ### 代码
 __TestJson.java__
