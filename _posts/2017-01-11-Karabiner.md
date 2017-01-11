@@ -10,7 +10,7 @@ title: karabiner鼠标映射
 ### 配置
 - 查词映射鼠标中键
 
-```
+```xml
 
 	<autogen> __KeyToKey__
 		PointingButton::MIDDLE,
@@ -20,7 +20,7 @@ title: karabiner鼠标映射
 
 - 顺便发现了取缔ScrollReverser的配置，少一个是一个
 
-```
+```xml
 
 	<autogen>
     		__FlipScrollWheel__
