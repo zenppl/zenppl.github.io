@@ -12,7 +12,8 @@ title: karabiner鼠标映射
 
 ```xml
 
-	<autogen> __KeyToKey__
+	<autogen> 
+		__KeyToKey__
 		PointingButton::MIDDLE,
 		KeyCode::D,ModifierFlag::CONTROL_L,ModifierFlag::COMMAND_L
 	</autogen>
