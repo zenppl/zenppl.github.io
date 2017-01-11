@@ -7,7 +7,8 @@ title: karabiner鼠标映射
 
 读了半天Apache Mina的文档，英文有些蛋疼，想到之前mac有个三指点击翻译的功能，用鼠标的话不太方便，一直在用karabiner做方向键映射，想把翻译这个操作映射到鼠标中键上
 
-### 贴配置
+### 配置
+- 查词映射鼠标中键
 
 ```
 
@@ -15,6 +16,16 @@ title: karabiner鼠标映射
 		PointingButton::MIDDLE,
 		KeyCode::D,ModifierFlag::CONTROL_L,ModifierFlag::COMMAND_L
 	</autogen>
+```
+
+- 顺便发现了取缔ScrollReverser的配置，少一个是一个
+
+```
+
+	<autogen>
+    		__FlipScrollWheel__
+    		Option::FLIPSCROLLWHEEL_VERTICAL
+  	</autogen>
 ```
 
 
