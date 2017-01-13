@@ -22,24 +22,23 @@ public class MinaServer {
 	private static final int PORT = 8888;
 	public static void main( String[] args ) throws IOException
 	{
-//	   NioSocketAcceptor acceptor = new NioSocketAcceptor();
-//	   acceptor.getFilterChain().addLast( "logger", new LoggingFilter() );
-//	   acceptor.getFilterChain().addLast( "codec", new ProtocolCodecFilter( new TextLineCodecFactory( Charset.forName( "UTF-8" ))));
-//	   acceptor.setHandler(  new TimeServerHandler() );
-//	   acceptor.getSessionConfig().setReadBufferSize( 2048 );
-//	   acceptor.getSessionConfig().setIdleTime( IdleStatus.BOTH_IDLE, 10 );
-//	   acceptor.bind( new InetSocketAddress(PORT) );
+//		NioSocketAcceptor acceptor = new NioSocketAcceptor();
+//		acceptor.getFilterChain().addLast( "logger", new LoggingFilter() );
+//		acceptor.getFilterChain().addLast( "codec", new ProtocolCodecFilter( new TextLineCodecFactory( Charset.forName( "UTF-8" ))));
+//		acceptor.setHandler(  new TimeServerHandler() );
+//		acceptor.getSessionConfig().setReadBufferSize( 2048 );
+//		acceptor.getSessionConfig().setIdleTime( IdleStatus.BOTH_IDLE, 10 );
+//		acceptor.bind( new InetSocketAddress(PORT) );
 	   
 		NioDatagramAcceptor udpAcceptor = new NioDatagramAcceptor();
 		udpAcceptor.setHandler( new TimeServerHandler());
 		udpAcceptor.getFilterChain().addLast("codec", new ProtocolCodecFilter(new TextLineCodecFactory( Charset.forName( "UTF-8" ))));
-		
 		DatagramSessionConfig dcfg = udpAcceptor.getSessionConfig();
 		dcfg.setReadBufferSize(4096);//设置接收最大字节默认2048  
-       dcfg.setReceiveBufferSize(4096);//设置输入缓冲区的大小  
-       dcfg.setSendBufferSize(4096);//设置输出缓冲区的大小  
-       dcfg.setReuseAddress(true);//设置每一个非主监听连接的端口可以重用  
-       udpAcceptor.bind(new InetSocketAddress(PORT));
+		dcfg.setReceiveBufferSize(4096);//设置输入缓冲区的大小  
+		dcfg.setSendBufferSize(4096);//设置输出缓冲区的大小  
+		dcfg.setReuseAddress(true);//设置每一个非主监听连接的端口可以重用  
+		udpAcceptor.bind(new InetSocketAddress(PORT));
 	}
 }
 ```
