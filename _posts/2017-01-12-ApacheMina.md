@@ -45,7 +45,7 @@ public class MinaServer {
 ```
 _IoHandler略_
 
-###netcat测试
+### netcat测试
 
 - nc 127.0.0.1 8888
 TCP 通过8888端口建立与服务器，之后发送消息到服务器
