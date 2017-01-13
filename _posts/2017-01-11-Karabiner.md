@@ -1,6 +1,6 @@
 ---
 layout: post
-title:8.【折腾】karabiner鼠标映射
+title: 8【折腾】karabiner鼠标映射
 ---
 
 ### 写在前边的废话
