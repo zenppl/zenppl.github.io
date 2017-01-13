@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 9【学习】Apache Mina
+title: 【玖·学习】Apache Mina
 ---
 
 ### 写在前边的废话
