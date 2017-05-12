@@ -25,7 +25,8 @@ title: 【拾贰·学习】Callback&Observer
 
 网上有些回调的讲解有误，比如下面这种并不是回调，只是一种解耦的机制
 
-```
+```java
+
 public class TestInterface {
     public static void main (String[] args){
         A a = new A(new B() {
@@ -54,7 +55,8 @@ interface B{
 
 #### 回调
 
-```
+```java
+
 public class TestCallBack {
     public static void main(String[] args){
 //      A1 a = new A1(new B1impl()); //单独写出类的实现更容易理解一些
@@ -102,7 +104,8 @@ interface B1{
 
 #### 观察者模式
 
-```
+```java
+
 public class TestObserver {
     public static void main(String[] args){
         A2 a = new A2();
