@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【拾壹·学习】Callback&Observer
+title: 【拾贰·学习】Callback&Observer
 ---
 
 ### 写在前边的废话
