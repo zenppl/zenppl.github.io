@@ -5,13 +5,9 @@ permalink: /about/
 ---
 
 Zenppl 
-
-
-       互联网金融 -> 手游 -> 语音识别 
     
     
-    
-       一个抱着服务器站在风口的小辣鸡  
+       失业中--  
        
        
 ### Contact me
